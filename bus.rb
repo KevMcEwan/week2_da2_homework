@@ -32,5 +32,8 @@ class Bus
     @passengers.delete(passenger)
   end
 
+def empty_bus
+  @passengers.clear
+end
 
 end

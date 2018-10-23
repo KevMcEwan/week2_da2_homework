@@ -49,6 +49,13 @@ class BusTest < Minitest::Test
     @bus1.remove_person_from_passengers(@person1)
     actual = @bus1.passengers.count
     assert_equal(expected, actual)
-  end 
+  end
+
+  def test_empty_bus
+    expected = 0
+    @bus1.empty_bus()
+    actual = @bus1.passengers.count
+    assert_equal(expected, actual)
+  end
 
 end
